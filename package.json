@@ -1,0 +1,8 @@
+{
+  "name": "tesla-engine",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "node-web-audio-api": "^1.0.0"
+  }
+}

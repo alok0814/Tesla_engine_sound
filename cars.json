@@ -1,0 +1,403 @@
+{
+ "cars": [
+  {
+   "cylinders": 12,
+   "engine": "6.5L NA V12",
+   "gearTopSpeedsKmh": [
+    60,
+    85,
+    115,
+    150,
+    190,
+    240,
+    340
+   ],
+   "id": "ferrari-812",
+   "idleRpm": 900,
+   "image": "assets/ferrari-812.jpg",
+   "imageSourceUrl": "https://zero2turbo.com/wp-content/uploads/2017/02/812_superfast_2_1.jpg",
+   "name": "Ferrari 812 Superfast",
+   "redlineRpm": 8900,
+   "sound": {
+    "burble": 0.15,
+    "character": "high-pitched V12 scream, smooth and even",
+    "filterBaseHz": 500,
+    "filterPerRpmHz": 0.58,
+    "filterQ": 2.0,
+    "forcedInductionWhine": 0.0,
+    "lumpiness": 0.3,
+    "noiseGain": 0.1,
+    "osc": {
+     "sawtooth": 0.55,
+     "square": 0.2,
+     "triangle": 0.25
+    },
+    "subOscGain": 0.25,
+    "harmonics": [
+     1.0,
+     0.55,
+     0.7,
+     0.4,
+     0.35,
+     0.25
+    ],
+    "halfOrder": 0.06,
+    "drive": 0.35,
+    "intake": {
+     "gain": 0.25,
+     "baseHz": 700,
+     "perRpmHz": 0.25
+    },
+    "resonance": {
+     "mult": 3.0,
+     "q": 4.0,
+     "gainDb": 6
+    },
+    "whineType": "none",
+    "whineGain": 0.0,
+    "whineMult": 5.5,
+    "whineOnsetRpm": 99999,
+    "blowOff": 0.0,
+    "valve": {
+     "openRpm": 3500,
+     "extraHz": 1500
+    },
+    "noiseBpMult": 2.0,
+    "characterV2": "65° V12, even 60° firing. Deep resonant idle rising to a metallic scream; equal-length manifolds emphasise the 3rd/6th harmonics; strong intake bark near redline. Smooth — no lumpiness, no half-order."
+   }
+  },
+  {
+   "cylinders": 10,
+   "engine": "5.2L NA V10",
+   "gearTopSpeedsKmh": [
+    55,
+    80,
+    110,
+    140,
+    180,
+    225,
+    325
+   ],
+   "id": "lamborghini-huracan",
+   "idleRpm": 850,
+   "image": "assets/lamborghini-huracan.jpg",
+   "imageSourceUrl": "https://images.hdqwalls.com/download/2019-lamborghini-huracan-evo-10k-2e-3000x2000.jpg?dl=1",
+   "name": "Lamborghini Huracán EVO",
+   "redlineRpm": 8500,
+   "sound": {
+    "burble": 0.5,
+    "character": "sharp V10 howl, aggressive, crackly on lift-off",
+    "filterBaseHz": 450,
+    "filterPerRpmHz": 0.5,
+    "filterQ": 2.5,
+    "forcedInductionWhine": 0.0,
+    "lumpiness": 0.3,
+    "noiseGain": 0.14,
+    "osc": {
+     "sawtooth": 0.6,
+     "square": 0.25,
+     "triangle": 0.15
+    },
+    "subOscGain": 0.3,
+    "harmonics": [
+     1.0,
+     0.6,
+     0.45,
+     0.5,
+     0.3,
+     0.2
+    ],
+    "halfOrder": 0.1,
+    "drive": 0.5,
+    "intake": {
+     "gain": 0.2,
+     "baseHz": 600,
+     "perRpmHz": 0.22
+    },
+    "resonance": {
+     "mult": 2.5,
+     "q": 5.0,
+     "gainDb": 7
+    },
+    "whineType": "none",
+    "whineGain": 0.0,
+    "whineMult": 5.5,
+    "whineOnsetRpm": 99999,
+    "blowOff": 0.0,
+    "valve": {
+     "openRpm": 3000,
+     "extraHz": 1200
+    },
+    "noiseBpMult": 2.0,
+    "characterV2": "5.2 V10 with SHARED crankpins -> UNEVEN 54°/90° firing intervals (unlike the old 5.0 even-fire). That unevenness is the off-beat, grungy growl: strong half-order (0.5x firing freq) content at low rpm that morphs into a banshee howl; heavy crackle on lift-off."
+   }
+  },
+  {
+   "cylinders": 8,
+   "engine": "6.2L Supercharged V8",
+   "gearTopSpeedsKmh": [
+    50,
+    75,
+    105,
+    135,
+    170,
+    210,
+    260,
+    327
+   ],
+   "id": "dodge-challenger-hellcat",
+   "idleRpm": 700,
+   "image": "assets/dodge-challenger.jpg",
+   "imageSourceUrl": "https://dubaiwheels.ae/images/20251007-074232-2025-dodge-challenger-exterior-sideprofile-right.jpg",
+   "name": "Dodge Challenger SRT Hellcat",
+   "redlineRpm": 6200,
+   "sound": {
+    "burble": 0.1,
+    "character": "deep crossplane V8 rumble + supercharger whine under load",
+    "filterBaseHz": 300,
+    "filterPerRpmHz": 0.35,
+    "filterQ": 1.5,
+    "forcedInductionWhine": 0.5,
+    "lumpiness": 0.4,
+    "noiseGain": 0.16,
+    "osc": {
+     "sawtooth": 0.4,
+     "square": 0.35,
+     "triangle": 0.25
+    },
+    "subOscGain": 0.7,
+    "harmonics": [
+     1.0,
+     0.5,
+     0.3,
+     0.18,
+     0.1,
+     0.06
+    ],
+    "halfOrder": 0.08,
+    "drive": 0.45,
+    "intake": {
+     "gain": 0.1,
+     "baseHz": 400,
+     "perRpmHz": 0.15
+    },
+    "resonance": {
+     "mult": 2.0,
+     "q": 2.0,
+     "gainDb": 3
+    },
+    "whineType": "supercharger",
+    "whineGain": 0.5,
+    "whineMult": 10.7,
+    "whineOnsetRpm": 2800,
+    "blowOff": 0.0,
+    "valve": {
+     "openRpm": 2500,
+     "extraHz": 900
+    },
+    "noiseBpMult": 1.5,
+    "characterV2": "Pushrod crossplane HEMI V8: per-bank uneven pulses -> deep lumpy idle, strong half-order. Signature layer is the 2.4L IHI twin-screw supercharger whine (rotors >14,000 rpm) that fades in past ~3,000 rpm and rises with load on top of the exhaust thunder. Low 6,200 rpm redline, lots of sub.",
+    "whineHzPerRpm": 0.712,
+    "whineHzPerRpm2": 1.07
+   }
+  },
+  {
+   "cylinders": 6,
+   "engine": "4.0L NA Flat-6",
+   "gearTopSpeedsKmh": [
+    55,
+    80,
+    105,
+    135,
+    170,
+    215,
+    318
+   ],
+   "id": "porsche-911-gt3",
+   "idleRpm": 900,
+   "image": "assets/porsche-911-gt3.webp",
+   "imageSourceUrl": "https://www.indigoautogroup.com/used-Rancho+Mirage-2022-Porsche-911-GT3-WP0AC2A92NS270041",
+   "name": "Porsche 911 GT3 (992)",
+   "redlineRpm": 9000,
+   "sound": {
+    "burble": 0.15,
+    "character": "metallic flat-6 rasp, very high revving, mechanical",
+    "filterBaseHz": 600,
+    "filterPerRpmHz": 0.62,
+    "filterQ": 3.0,
+    "forcedInductionWhine": 0.0,
+    "lumpiness": 0.28,
+    "noiseGain": 0.12,
+    "osc": {
+     "sawtooth": 0.65,
+     "square": 0.15,
+     "triangle": 0.2
+    },
+    "subOscGain": 0.2,
+    "harmonics": [
+     1.0,
+     0.5,
+     0.55,
+     0.45,
+     0.3,
+     0.22
+    ],
+    "halfOrder": 0.06,
+    "drive": 0.5,
+    "intake": {
+     "gain": 0.35,
+     "baseHz": 900,
+     "perRpmHz": 0.3
+    },
+    "resonance": {
+     "mult": 3.0,
+     "q": 6.0,
+     "gainDb": 8
+    },
+    "whineType": "none",
+    "whineGain": 0.0,
+    "whineMult": 5.5,
+    "whineOnsetRpm": 99999,
+    "blowOff": 0.0,
+    "valve": {
+     "openRpm": 3000,
+     "extraHz": 1800
+    },
+    "noiseBpMult": 2.5,
+    "characterV2": "4.0 flat-6, even 120° firing, 9,000 rpm. Mournful howl below 4,000 rpm, manic metallic scream above; six individual throttle bodies make intake roar a major layer; exhaust spans ~200 Hz-5 kHz; second intensity layer from ~3,000 rpm (progressive exhaust valve)."
+   }
+  },
+  {
+   "cylinders": 8,
+   "engine": "5.0L NA V8 (Coyote)",
+   "gearTopSpeedsKmh": [
+    60,
+    95,
+    135,
+    180,
+    235,
+    290
+   ],
+   "id": "ford-mustang-gt",
+   "idleRpm": 750,
+   "image": "assets/ford-mustang.webp",
+   "imageSourceUrl": "https://img-ik.cars.co.za/news-site-za/images/2019/09/Ford-Mustang-side.jpg",
+   "name": "Ford Mustang GT",
+   "redlineRpm": 7500,
+   "sound": {
+    "burble": 0.4,
+    "character": "classic crossplane V8 burble, lumpy idle, throaty midrange",
+    "filterBaseHz": 320,
+    "filterPerRpmHz": 0.4,
+    "filterQ": 1.8,
+    "forcedInductionWhine": 0.0,
+    "lumpiness": 0.4,
+    "noiseGain": 0.15,
+    "osc": {
+     "sawtooth": 0.45,
+     "square": 0.3,
+     "triangle": 0.25
+    },
+    "subOscGain": 0.55,
+    "harmonics": [
+     1.0,
+     0.55,
+     0.35,
+     0.22,
+     0.14,
+     0.08
+    ],
+    "halfOrder": 0.08,
+    "drive": 0.42,
+    "intake": {
+     "gain": 0.15,
+     "baseHz": 500,
+     "perRpmHz": 0.2
+    },
+    "resonance": {
+     "mult": 2.0,
+     "q": 3.0,
+     "gainDb": 4
+    },
+    "whineType": "none",
+    "whineGain": 0.0,
+    "whineMult": 5.5,
+    "whineOnsetRpm": 99999,
+    "blowOff": 0.0,
+    "valve": {
+     "openRpm": 2800,
+     "extraHz": 1000
+    },
+    "noiseBpMult": 1.5,
+    "characterV2": "5.0 Coyote DOHC crossplane V8: uneven per-bank exhaust pulses (90/180/270/180°) = classic burble and choppy idle (strong half-order), but DOHC breathing gives a freer, raspier top end than the pushrod Hellcat, up to the 7,500 rpm redline. Active exhaust valves open with throttle."
+   }
+  },
+  {
+   "cylinders": 6,
+   "engine": "3.8L Twin-Turbo V6",
+   "gearTopSpeedsKmh": [
+    55,
+    85,
+    120,
+    160,
+    205,
+    315
+   ],
+   "id": "nissan-gtr",
+   "idleRpm": 800,
+   "image": "assets/nissan-gtr.jpg",
+   "imageSourceUrl": "https://spots.ag/2015/05/27/nissan-gt-r-2013-c214827052015000450_5.jpg",
+   "name": "Nissan GT-R (R35)",
+   "redlineRpm": 7100,
+   "sound": {
+    "burble": 0.12,
+    "character": "smooth turbo V6, boost whoosh under load, muted exhaust",
+    "filterBaseHz": 400,
+    "filterPerRpmHz": 0.45,
+    "filterQ": 1.6,
+    "forcedInductionWhine": 0.35,
+    "lumpiness": 0.25,
+    "noiseGain": 0.2,
+    "osc": {
+     "sawtooth": 0.4,
+     "square": 0.2,
+     "triangle": 0.4
+    },
+    "subOscGain": 0.35,
+    "harmonics": [
+     1.0,
+     0.45,
+     0.3,
+     0.15,
+     0.08,
+     0.05
+    ],
+    "halfOrder": 0.08,
+    "drive": 0.3,
+    "intake": {
+     "gain": 0.2,
+     "baseHz": 600,
+     "perRpmHz": 0.2
+    },
+    "resonance": {
+     "mult": 2.0,
+     "q": 2.0,
+     "gainDb": 2
+    },
+    "whineType": "turbo",
+    "whineGain": 0.4,
+    "whineMult": 5.5,
+    "whineOnsetRpm": 2500,
+    "blowOff": 0.8,
+    "valve": {
+     "openRpm": 3000,
+     "extraHz": 400
+    },
+    "noiseBpMult": 1.5,
+    "characterV2": "VR38DETT 60° twin-turbo V6: turbos sit in the exhaust stream and muffle/smooth the note (dark filter, fewer high harmonics). Boost builds from ~2,500-3,000 rpm: induction roar + turbo spool, gravelly battle-cry near the 7,100 rpm redline, short deliberate pops on shifts, blow-off whoosh on lift-off."
+   }
+  }
+ ],
+ "note": "Engine/sound parameters for a TeslaSound-style web app. Speeds are km/h at redline in each gear (approximate, for the virtual gearbox). firingFreqHz = rpm/60 * (cylinders/2) for a 4-stroke engine. Images: downloaded copies in ./assets for prototyping; imageSourceUrl is the original page/URL — replace with licensed or own photos before any public release. V2 (2026-10-31): sound objects extended with research-based fields — harmonics[6] (gains at 1x-6x firing freq), halfOrder (0.5x component from uneven firing), drive (waveshaper saturation), intake (intake-roar noise), resonance (tracking peaking filter), whineType/whineGain/whineMult/whineOnsetRpm (supercharger/turbo), blowOff (GT-R), valve (exhaust-valve extra filter opening), noiseBpMult, characterV2 (researched description). See SOUND_RESEARCH.md and engine-audio.js.",
+ "soundSchemaVersion": 2
+}

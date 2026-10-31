@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#07080c" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Engine Sound</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <noscript><p class="noscript">JavaScript を有効にしてください。</p></noscript>
+  <div class="app">
+    <header class="banner">
+      <img id="banner-img" alt="" draggable="false" />
+      <div class="veil"></div>
+      <div class="banner-copy">
+        <p class="eyebrow"><span class="led" aria-hidden="true"></span> ENGINE SOUND</p>
+        <h1 id="car-name">読み込み中…</h1>
+        <p id="car-engine"></p>
+        <p id="car-redline" class="redline-label"></p>
+      </div>
+    </header>
+
+    <main class="cluster">
+      <section class="tach-card" aria-label="タコメーター">
+        <div class="tach-wrap">
+          <svg id="tach" viewBox="0 0 400 400" role="img" aria-label="タコメーター">
+            <defs>
+              <radialGradient id="faceGrad" cx="50%" cy="38%" r="68%">
+                <stop offset="0%" stop-color="#222633" />
+                <stop offset="62%" stop-color="#10131b" />
+                <stop offset="100%" stop-color="#07080d" />
+              </radialGradient>
+              <filter id="needleShadow" x="-40%" y="-40%" width="180%" height="180%">
+                <feDropShadow dx="0" dy="2" stdDeviation="2.2" flood-color="#000" flood-opacity="0.65" />
+              </filter>
+            </defs>
+            <circle class="face" cx="200" cy="208" r="176" />
+            <circle class="bezel" cx="200" cy="208" r="176" />
+            <circle class="inner-ring" cx="200" cy="208" r="148" />
+            <path id="tach-track" />
+            <path id="tach-red" />
+            <g id="tach-ticks"></g>
+            <g id="needle" filter="url(#needleShadow)">
+              <polygon id="needle-shape" points="200,58 194,208 206,208" />
+              <polygon class="counter" points="200,236 193,208 207,208" />
+              <circle class="hub" cx="200" cy="208" r="12" />
+              <circle class="hub-pin" cx="200" cy="208" r="4.5" />
+            </g>
+          </svg>
+          <div class="glass" aria-hidden="true"></div>
+          <div class="tach-center">
+            <div id="shift-light" class="shift" aria-hidden="true">SHIFT</div>
+            <div id="gear" class="gear">–</div>
+            <div class="rpm-line">
+              <span id="rpm">0</span>
+              <span class="rpm-unit">RPM</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="speed-panel" aria-label="速度">
+        <p class="kicker">SPEED</p>
+        <div class="speed-row">
+          <span id="speed">0</span>
+          <span class="speed-unit">km/h</span>
+        </div>
+        <dl class="meta">
+          <div>
+            <dt>GPS</dt>
+            <dd id="gps-status" data-mode="idle" role="status">待機</dd>
+          </div>
+          <div>
+            <dt>速度源</dt>
+            <dd id="speed-source">—</dd>
+          </div>
+        </dl>
+        <p id="gps-note" class="note" role="status" hidden></p>
+        <div class="cabin" id="cabin" role="group" aria-label="キャビン低音">
+          <span class="slider-name">低音</span>
+          <button type="button" data-cabin="premium" aria-pressed="true">プレミアム</button>
+          <button type="button" data-cabin="base" aria-pressed="false">ベース</button>
+          <button type="button" data-cabin="headphones" aria-pressed="false">ヘッドホン</button>
+        </div>
+        <p id="audio-debug" class="audio-debug" aria-live="polite">遅延 —</p>
+      </section>
+    </main>
+
+    <section class="dock" aria-label="操作">
+      <div class="controls">
+        <button id="start-btn" class="btn btn-start" type="button" disabled>エンジン始動</button>
+        <button id="rev-btn" class="btn btn-rev" type="button" disabled>長押しで空吹かし</button>
+        <label class="slider volume">
+          <span class="slider-name">音量</span>
+          <input id="volume" type="range" min="0" max="100" value="75" aria-label="音量" />
+        </label>
+      </div>
+      <div class="demo-row">
+        <button id="demo-toggle" class="btn btn-demo" type="button" aria-pressed="false" disabled>デモ走行</button>
+        <label class="slider demo-slider">
+          <span class="slider-name">仮想速度 <strong id="demo-readout">0</strong> km/h</span>
+          <input id="demo-speed" type="range" min="0" max="160" value="0" step="1" aria-label="仮想速度" disabled />
+        </label>
+        <button id="sweep-btn" class="btn btn-ghost" type="button" disabled>0→160 スイープ</button>
+      </div>
+    </section>
+
+    <nav class="cars" id="car-list" aria-label="車両"></nav>
+  </div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
